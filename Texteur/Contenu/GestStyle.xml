@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Gestion des styles</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Style utilisé dans votre document</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Un document ne doit pas comporter un nombre de style trop important, en règle général pas plus de 10. Les styles utilisés dans votre document sont affichés dans le groupe &quot;style&quot; du ruban &quot;affichage&quot;.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/styleUtilise.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Style du paragraphe</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Le style du paragraphe où est situé le curseur est affiché dans le groupe &quot;style&quot; du ruban &quot;affichage&quot;.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/affiStyle.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Élément utilisant le même style</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t6">La commande est situé au même endroit que précédemment.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/styleId.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Modification d'un style</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t8">La modification du style se fait à partir du même menu contextuel que précédement.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/modifStyle.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

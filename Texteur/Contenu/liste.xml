@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Liste à puces ou numérotées</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Les listes à puces et les listes numérotées de Microsoft Word sont faciles à créer. En effet, vous pouvez rapidement ajouter des puces ou des numéros aux lignes existantes de texte, ou bien Word peut créer automatiquement des listes en cours de frappe.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t6">Si, à l'occasion, vous ne voulez pas que le texte soit transformé en liste, vous pouvez annuler la création de la liste en cliquant sur le bouton Options de correction automatique qui s'affiche à proximité de la liste.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t7">Les puces peuvent être personnalisées avec des images de votre choix.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/listePuce.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

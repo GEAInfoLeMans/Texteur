@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Justification d'un paragraphe</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:basic>
+					<op:pbTi>
+						<sp:title>placement du texte</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Le placement du texte dépend de nombreux facteurs. </sc:para>
+								<sc:para xml:space="preserve">Les <sc:inlineStyle role="emp">marges</sc:inlineStyle> conditionnent la distance de tout le texte par rapport au bord de la page, tandis que les <sc:inlineStyle role="emp">retraits</sc:inlineStyle> et l'<sc:inlineStyle role="emp">alignement</sc:inlineStyle> déterminent l'ajustement du texte entre les marges. Vous pouvez également spécifier l'espacement à réserver entre les lignes, avant et après les paragraphes.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t6">Placement et alignement du texte</sc:para>
+								<sc:para xml:space="preserve" sc:id="t10"><sc:inlineImg role="ico" sc:id="t23" sc:refUri="/Texteur/Image/marRetr.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:basic>
+				<sp:basic>
+					<op:pbTi>
+						<sp:title>Marges</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t12">Les marges déterminent la largeur globale de la zone de texte principale — c'est-à-dire l'espace entre le texte et le bord de la page.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:basic>
+				<sp:basic>
+					<op:pbTi>
+						<sp:title>Retrait</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t17">Les retraits déterminent la distance qui sépare le paragraphe des marges de gauche ou de droite. À l'intérieur des marges, vous pouvez augmenter ou diminuer le retrait d'un paragraphe ou d'un groupe de paragraphes. Vous pouvez également créer un retrait négatif, qui rapproche le paragraphe de la marge de gauche. Enfin, vous pouvez créer un retrait négatif de première ligne, pour lequel la première ligne du paragraphe n'est pas en retrait, mais les lignes suivantes le sont.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:basic>
+				<sp:basic>
+					<op:pbTi>
+						<sp:title>Justification du paragraphe</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t22">L'alignement horizontal détermine l'apparence et l'orientation des bords d'un paragraphe : aligné à gauche, à droit, centré ou justifié. Par exemple, dans un paragraphe aligné à gauche (l'alignement le plus courant), le bord gauche du paragraphe est aligné sur la marge de gauche.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t31" sc:refUri="/Texteur/Image/justif.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:basic>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

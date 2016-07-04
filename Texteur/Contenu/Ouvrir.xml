@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Créer, ouvrir ou enregistrer un document</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Créer un document</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Une première méthode est d'utiliser le bouton office et l'article &quot;nouveau&quot;.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t7">Une seconde méthode est de créer dans Windows 7 un &quot;document Microsoft Office Word&quot; en utilisant le menu contextuel du dossier.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Enregistrer un document</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Un document doit avoir un nom avant d'être enregistrer. Le document sera ensuite enregistrer dans le dossier que vous choisirez dans la fenêtre.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:comp>
+					<op:pbTi>
+						<sp:title>Dupliquer un document</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t12">Une première méthode est d'utiliser le bouton office et l'article &quot;enregistrer sous&quot; et de choisr un nouveau nom.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t13">Une seconde méthode est sélectionner le document dans Windows 7 et d'effectuer un copier/coller du document et de renommer le document copier.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:comp>
+				<sp:comp>
+					<op:pbTi>
+						<sp:title>Enregistrer un document destiné à être lu par un autre logiciel</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t10">Il faut choisir l'option Enregistrer Sous dans le bouton Office et choir le format dans la liste déroulante.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/enrOpt.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:comp>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Ouvrir un document</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t8">Une première méthode est d'utiliser le bouton Office et l'article &quot;ouvrir&quot; et de parcourir l'arborescence de Windows.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t9">Une seconde solution est de parcourir l'arborescence de Windows 7 et de cliquer deux fois sur le document.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

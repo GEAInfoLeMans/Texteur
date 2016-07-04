@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:courseUa xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Mise en forme d'un document</sp:title>
+		</op:uM>
+		<sp:obj>
+			<op:sTxt>
+				<sc:para xml:space="preserve" sc:id="t6">Différents techniques sont présentées pour mettre en forme un document :</sc:para>
+				<sc:para xml:space="preserve" sc:id="t7">utilisation des styles pour mettre en forme des paragraphes</sc:para>
+				<sc:para xml:space="preserve" sc:id="t8">création de table des matières</sc:para>
+				<sc:para xml:space="preserve" sc:id="t9">création d'un index</sc:para>
+				<sc:para xml:space="preserve" sc:id="t10">gestion des entêtes et pied de page</sc:para>
+				<sc:para xml:space="preserve" sc:id="t11">présentation de tableau</sc:para>
+			</op:sTxt>
+		</sp:obj>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/StructDoc.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/Caracteres.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex1.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/Interligne.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/espacement.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/modifMarge.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex2.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/justification.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/Style.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/modifretrait.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/creationStyle.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex3.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex4.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/GestStyle.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/gestStyle_2.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex5.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/tabulation.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex6.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/ZoneTexte.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex7.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/liste.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex8.xml"/>
+	</op:courseUa>
+</sc:item>

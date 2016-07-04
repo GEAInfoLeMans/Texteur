@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Aide de word</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:meth>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Pour accéder à l'aide dans Word vous pouvez :</sc:para>
+								<sc:itemizedList sc:id="t5">
+									<sc:listItem sc:id="t6">
+										<sc:para xml:space="preserve">appuyer sur le ? à droite de la barre des menus</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t7">
+										<sc:para xml:space="preserve">appuyer sur la touche F1</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t8">
+										<sc:para xml:space="preserve">placer la souris sur l'élément et cliquer avec le bouton droit pour avoir des informations complémentaires</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</op:txt>
+						</sp:txt>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t9">l'écran d'aide se présente de cette manière. Vous pouvez taper un mot clef ou bien afficher la table des matières.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/AideWord1.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t10">La table des matières de l'aide se présente ainsi. Celle-ci est utile lorsque la recherche par mot clef n'a rien donnée.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/AideWord2.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

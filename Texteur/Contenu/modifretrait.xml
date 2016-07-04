@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>modification des retraits</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>Règle de Word7</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">La règle permet d'avoir la position en cm du texte par rapport au bord de la page.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t9" sc:refUri="/Texteur/Image/marRegle.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:rem>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Si celle-ci n'est pas visible utilisez le bouton correspondant dans <sc:uLink role="ucLnk" sc:id="t7" sc:refUri="/Texteur/Contenu/Interface.xml">l'interface.</sc:uLink></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:rem>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Modification des retraits avec la souris</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t8">Il suffit de faire glisser les repères dans la règle.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/taquetRg.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>En utilisant le clavier</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t10">Il suffit de taper les valeurs voulues dans le groupe paragraphe du ruban accueil.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/clavierRt.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

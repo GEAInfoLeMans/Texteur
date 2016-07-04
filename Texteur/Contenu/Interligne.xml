@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Interligne</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Interligne</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">L'interligne détermine l'espace vertical entre les lignes de texte d'un paragraphe. Par défaut, les lignes sont séparées par un interligne simple, ce qui signifie que l'espacement est ajusté à la plus grande police de la ligne plus un petit espace supplémentaire.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t6">Si une ligne contient un caractère, un graphisme ou une formule de grande taille, Microsoft Word augmente l'interligne. Pour appliquer un interlignage uniforme, utilisez l'option d'espacement exact, puis indiquez une quantité d'espace suffisante pour le graphisme ou le caractère le plus grand. Si certains éléments apparaissent tronqués, augmentez l'interligne.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t8">les types d'interligne possibles sont :</sc:para>
+								<sc:itemizedList sc:id="t21">
+									<sc:listItem sc:id="t22">
+										<sc:para xml:space="preserve" sc:id="t9">Simple ->Ajuste l'interligne à la police la plus grande de cette ligne, en ajoutant un petit espace. La quantité d'espace supplémentaire varie en fonction de la police utilisée.</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:itemizedList sc:id="t24">
+									<sc:listItem sc:id="t25">
+										<sc:para xml:space="preserve" sc:id="t11">1,5 ligne -> Une fois et demie l'interligne simple.</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t26">
+										<sc:para xml:space="preserve" sc:id="t13">Double -> Deux fois l'interligne simple.</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t27">
+										<sc:para xml:space="preserve" sc:id="t15">Au moins ->Interligne minimum permettant de rendre visible le plus grand élément de la ligne (police ou graphisme).</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t28">
+										<sc:para xml:space="preserve" sc:id="t17">Exactement -> Interligne fixe que Microsoft Word ne modifie pas.</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t29">
+										<sc:para xml:space="preserve" sc:id="t19">Multiple -> Interligne qui augmente ou diminue selon le pourcentage que vous spécifiez. Par exemple, si vous indiquez 1,2, l'interligne augmente de 20 %.</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

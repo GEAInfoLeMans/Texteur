@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Clavier</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:remind>
+					<op:pbTi>
+						<sp:title>Nom des touches</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t6">1 ESC ou Echap => annule action en cours</sc:para>
+										<sc:para xml:space="preserve" sc:id="t7">•2 Tab ou tabulation voir + tard</sc:para>
+										<sc:para xml:space="preserve" sc:id="t8">•3 Verr Maj ou lettre en majuscule et accès aux symboles de la partie haute des touches</sc:para>
+										<sc:para xml:space="preserve" sc:id="t9">4 shift ou combinée avec une touche accès au symbole de la partie haute de la touche</sc:para>
+										<sc:para xml:space="preserve" sc:id="t10">•5 Ctrl combinée avec une touche accès aux raccourcis clavier</sc:para>
+										<sc:para xml:space="preserve" sc:id="t11">•6 Alt accès au menu</sc:para>
+										<sc:para xml:space="preserve" sc:id="t12">7 Alt Gr accès à la partie en bas à droite de la touche</sc:para>
+										<sc:para xml:space="preserve" sc:id="t13">•</sc:para>
+										<sc:para xml:space="preserve" sc:id="t14">•8 Entrée sous word création d'un nouveau paragraphe</sc:para>
+										<sc:para xml:space="preserve" sc:id="t15">•9 Retour arrière efface le caractère précédent</sc:para>
+										<sc:para xml:space="preserve" sc:id="t16">•10 Suppr efface le caractère suivant</sc:para>
+										<sc:para xml:space="preserve" sc:id="t17">11 Insert Bascule mode insertion /substitution</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/clavier_1.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:remind>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

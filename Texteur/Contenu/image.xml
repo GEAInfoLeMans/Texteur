@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Image</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:meth>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Les images peuvent être insérées à partir d'un fichier, d'un copier coller (presse papier) ou des images clipart</sc:para>
+								<sc:para xml:space="preserve" sc:id="t5">Les images se positionnent par rapport au texte de la même manière que les <sc:uLink role="ucLnk" sc:id="t6" sc:refUri="/Texteur/Contenu/ZoneTexte.xml">zones de texte</sc:uLink>.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Modification d'une image</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Une fois l'image insérée et sélectionnée dans le document la barre d'outils image apparaît dans le ruban.</sc:para>
+								<sc:para xml:space="preserve">De nombreuses manipulation d'images sont possibles comme le montre la vidéo suivante.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/image.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

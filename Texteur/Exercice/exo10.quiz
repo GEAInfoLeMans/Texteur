@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:cloze xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:exeM/>
+		<sc:gapText>
+			<op:clozeTxt>
+				<sc:para xml:space="preserve" sc:id="t5">Lors de la copie de document pdf l'outil recherche et remplacement est utile mais plus complexe.</sc:para>
+				<sc:para xml:space="preserve" sc:id="t6">Le document est disponible ici. </sc:para>
+				<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Dans ce document seule la page 3 est copiée.</sc:inlineStyle></sc:para>
+				<sc:para xml:space="preserve" sc:id="t7">Vous pouvez visionner <sc:uLink role="resLnk" sc:id="t16" sc:refUri="/Texteur/video/recRepPdf.mp4">ici</sc:uLink> un exemple d'usage de la recherche et remplacement de caractères spéciaux.<sc:uLink role="resLnk" sc:id="t15" sc:refUri="/Texteur/video/recRepPdf.mp4"/></sc:para>
+				<sc:para xml:space="preserve" sc:id="t8">Dans cet exemple on constate que lors de la copie du document, les paragraphes sont mal formés. En particulier les sauts de paragraphes qui ne sont pas suivis d'une majuscule sont généralement faux et donc les sauts de paragraphes suivis d'une majuscule sont bons (le marquis de La Palice n'aurait pas dit mieux).</sc:para>
+				<sc:para xml:space="preserve" sc:id="t9">Pour rechercher une majuscule on utilise les caractères génériques avec l'option [A-Z]. Hélas le saut de paragraphe n'existe pas avec le caractère générique. Donc on procède en quatre étapes :</sc:para>
+				<sc:para xml:space="preserve" sc:id="t10">1. sans utiliser les caractères génériques, remplacer ^p par 1234</sc:para>
+				<sc:para xml:space="preserve">Combien de remplacements ont été effectués? votre réponse <sc:textLeaf role="gap" sc:id="t17">23</sc:textLeaf></sc:para>
+				<sc:para xml:space="preserve" sc:id="t11">2. en utilisant les caractères génériques remplacer 1234[A-Z] par 4321^&amp;</sc:para>
+				<sc:para xml:space="preserve" sc:id="t18">Combien de remplacements ont été effectués? votre réponse <sc:textLeaf role="gap" sc:id="t19">8</sc:textLeaf></sc:para>
+				<sc:para xml:space="preserve" sc:id="t12">3. sans utiliser les caractères génériques, remplacer 43211234 par ^p</sc:para>
+				<sc:para xml:space="preserve" sc:id="t21">Combien de remplacements ont été effectués? votre réponse <sc:textLeaf role="gap" sc:id="t22">8</sc:textLeaf></sc:para>
+				<sc:para xml:space="preserve" sc:id="t13">4. sans utiliser les caractères génériques, remplacer 1234 par un espace</sc:para>
+				<sc:para xml:space="preserve" sc:id="t24">Combien de remplacements ont été effectués? votre réponse  <sc:textLeaf role="gap" sc:id="t25">15</sc:textLeaf></sc:para>
+				<sc:para xml:space="preserve" sc:id="t26">Combien y a t-il de paragraphe à la fin dans le document ? votre réponse  <sc:textLeaf role="gap" sc:id="t27">9</sc:textLeaf></sc:para>
+			</op:clozeTxt>
+		</sc:gapText>
+	</op:cloze>
+</sc:item>

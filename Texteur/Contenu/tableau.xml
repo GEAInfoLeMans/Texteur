@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Tableau</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t2">Un tableau se compose de lignes et de colonnes de cellules dans lesquelles vous pouvez insérer du texte et des images. Il est assez fréquent de faire appel à des tableaux pour organiser et présenter des informations.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t4" sc:refUri="/Texteur/Image/Tableau_1.png"/></sc:para>
+								<sc:para xml:space="preserve">Vous pouvez également recourir à des tableaux pour créer des mises en page originales ou pour insérer du texte, des images et des tableaux imbriqués sur une page Web.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t5" sc:refUri="/Texteur/Image/Tableau_2.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Création</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:orderedList sc:id="t13">
+									<sc:listItem sc:id="t14">
+										<sc:para xml:space="preserve" sc:id="t7">Compter le nombre de lignes et de colonnes maximum dans le tableau : s'il y a des cellules fusionnées tenir compte du nombre de cellules nécessaires pour construire la cellule</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t15">
+										<sc:para xml:space="preserve" sc:id="t8"> [Insertion[tableau]]</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t16">
+										<sc:para xml:space="preserve" sc:id="t9">Insérer les données dans le tableau</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t17">
+										<sc:para xml:space="preserve" sc:id="t10">Fusionner les cellules</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t18">
+										<sc:para xml:space="preserve" sc:id="t11"> Appliquer le style voulu au tableau</sc:para>
+									</sc:listItem>
+								</sc:orderedList>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:comp>
+					<op:pbTi>
+						<sp:title>Outils du mode tableau</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t20">Les outils du mode Tableau apparaissent dans le ruban en cliquant deux fois sur l’icône en haut à gauche du tableau.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/tableau.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:comp>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:courseUa xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Outils de word</sp:title>
+		</op:uM>
+		<sp:obj>
+			<op:sTxt>
+				<sc:para xml:space="preserve" sc:id="t2">Pour faciliter la gestion des documents longs Word propose quelques outils :</sc:para>
+				<sc:para xml:space="preserve">recherche et remplacement</sc:para>
+				<sc:para xml:space="preserve">table des matières </sc:para>
+				<sc:para xml:space="preserve">pagination, en-tête et pied de page.</sc:para>
+				<sc:para xml:space="preserve">bibliographie</sc:para>
+				<sc:para xml:space="preserve">dessin et manipulation d'image</sc:para>
+				<sc:para xml:space="preserve">équation</sc:para>
+				<sc:para xml:space="preserve">partage de document</sc:para>
+			</op:sTxt>
+		</sp:obj>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/recherche.xml"/>
+		<sp:trainUcCloze sc:refUri="/Texteur/Exercice/exo10.quiz"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/modeAff.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/plan.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/ex11.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/entete.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/section.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/orientation.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/PageTitre.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/exo13.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/colonne.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/exo14.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/notebas.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/exo15.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/index.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/exo16.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/tableau.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/exo17.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/exo18.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/image.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/dessin.xml"/>
+		<sp:practUc sc:refUri="/Texteur/Exercice/exo19.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Contenu/biblio.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/partage.xml"/>
+	</op:courseUa>
+</sc:item>

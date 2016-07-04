@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Démarrage du logiciel Word 2007</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:meth>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Pour démarrer le logiciel Word vous pouvez le faire :</sc:para>
+								<sc:itemizedList sc:id="t9">
+									<sc:listItem sc:id="t10">
+										<sc:para xml:space="preserve" sc:id="t14">à partir du menu [démarrer[tous les programmes[microsoft windows]]]</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t11">
+										<sc:para xml:space="preserve" sc:id="t7">en cliquant sur le raccourci microsoft windows sur le bureau (si vous le voyez!)</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t12">
+										<sc:para xml:space="preserve" sc:id="t8"> en double cliquant sur un un document microsoft windows (si vous en avez un dans vos dossiers)</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

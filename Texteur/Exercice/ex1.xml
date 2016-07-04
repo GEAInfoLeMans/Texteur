@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:exeM>
+			<sp:title>Exo 1-Clavier, caractères spéciaux</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve" sc:id="t3">Il faut saisir le texte suivant :</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t8" sc:refUri="/Texteur/Image/ex1_1.png"/></sc:para>
+						<sc:para xml:space="preserve" sc:id="t7">et le sauvegarder dans votre dossier WORDSemestre1 sous la forme NOMPRENOMEX1Gxx où xx est le numéro de votre groupe.</sc:para>
+						<sc:para xml:space="preserve" sc:id="t5">Vous entrez le texte précédent en respectant scrupuleusement les majuscules, les espaces, les caractères Entrée et les accentués.</sc:para>
+						<sc:para xml:space="preserve">En affichant les caractères spéciaux vous devez obtenir :</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t9" sc:refUri="/Texteur/Image/ex1_2.png"/></sc:para>
+						<sc:para xml:space="preserve">Pour vérifier la saisie vous pouvez afficher les statistiques du document :</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t10" sc:refUri="/Texteur/Image/ex1_3.png"/></sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+	</op:practUc>
+</sc:item>

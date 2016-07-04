@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:cloze xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:exeM>
+			<sp:title>Exo9-rechercher et remplacer</sp:title>
+		</op:exeM>
+		<sc:gapText>
+			<op:clozeTxt>
+				<sc:para xml:space="preserve" sc:id="t5">Télécharger le document suivant, et suivre les consignes et compléter les réponses.</sc:para>
+				<sc:para xml:space="preserve" sc:id="t6">Dans le document word télécharger, combien y a t-il de caractères (espace compris)?</sc:para>
+				<sc:para xml:space="preserve" sc:id="t7">Votre réponse <sc:textLeaf role="gap" sc:id="t16">4931</sc:textLeaf></sc:para>
+				<sc:para xml:space="preserve" sc:id="t8">En utilisant la fonction Rechercher, déterminer le nombre de fois où il y a deux espaces consécutifs.</sc:para>
+				<sc:para xml:space="preserve" sc:id="t9">Combien y a t-il de fois deux espaces consécutifs? Votre réponse <sc:textLeaf role="gap" sc:id="t17">2</sc:textLeaf> </sc:para>
+				<sc:para xml:space="preserve" sc:id="t10">A l'aide de la fonction remplacer, substituer les de deux espaces consécutifs par un seul.</sc:para>
+				<sc:para xml:space="preserve" sc:id="t11">Combien y a t-il de caractères (espace compris)? Votre réponse <sc:textLeaf role="gap" sc:id="t18">4921</sc:textLeaf></sc:para>
+				<sc:para xml:space="preserve" sc:id="t12">On veut déterminer s'il y a un espace en début de ligne. Rechercher la séquence saut de paragraphe et espace ("^p ").</sc:para>
+				<sc:para xml:space="preserve" sc:id="t13">Combien y-a t-il de fois cette séquence dans le document? Votre réponse <sc:textLeaf role="gap" sc:id="t19">2</sc:textLeaf></sc:para>
+				<sc:para xml:space="preserve" sc:id="t14">Remplacer la séquence saut de paragraphe et espace par un saut de paragraphe.</sc:para>
+				<sc:para xml:space="preserve" sc:id="t15">Combien y a t-il de caractères (espace compris)? Votre réponse <sc:textLeaf role="gap" sc:id="t20">4919</sc:textLeaf></sc:para>
+			</op:clozeTxt>
+		</sc:gapText>
+	</op:cloze>
+</sc:item>

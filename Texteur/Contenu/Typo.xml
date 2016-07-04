@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3">
+		<op:uM>
+			<sp:title xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">Règles de typographie de la langue française</sp:title>
+		</op:uM>
+		<sp:pb xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Dans <sc:uLink role="docLnk" sc:id="t8" sc:refUri="/Texteur/Ressource/typo_paris_5.pdf">ce document</sc:uLink>, vous trouverez les principales règles typographiques de la langue Française.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t5">Si vous avez un doute, vous pouvez toujours consulter <sc:phrase role="url"><op:urlM><sp:url>http://www.culture.gouv.fr/culture/dglf/ressources/ressources_ortho.htm</sp:url></op:urlM>cette page</sc:phrase> et en particulier <sc:phrase role="url"><op:urlM><sp:url>http://www.synapse-fr.com/typographie/TTM_0.htm</sp:url></op:urlM>celle-ci</sc:phrase>.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

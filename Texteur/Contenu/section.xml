@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Section</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Vous pouvez utiliser les sections pour modifier la mise en page d'un document à l'intérieur d'une page ou d'un groupe de pages.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t5" sc:refUri="/Texteur/Image/section.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:orderedList sc:id="t10">
+									<sc:listItem sc:id="t11">
+										<sc:para xml:space="preserve" sc:id="t7">Application du format « une colonne » à une section</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t12">
+										<sc:para xml:space="preserve" sc:id="t8"> Application du format « deux colonnes » à une section</sc:para>
+									</sc:listItem>
+								</sc:orderedList>
+								<sc:para xml:space="preserve" sc:id="t9">Il vous suffit d'insérer des sauts de section pour diviser le document en sections, et d'appliquer ensuite la mise en forme voulue à chaque section. Choisissez le format « une colonne » pour la section qui constituera l'introduction d'un état et sélectionnez le format « deux colonnes » pour la section suivante, dans laquelle apparaîtra le corps du texte, par exemple.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t14">Vous pouvez modifier les formats de section suivants :</sc:para>
+								<sc:itemizedList sc:id="t46">
+									<sc:listItem sc:id="t47">
+										<sc:para xml:space="preserve" sc:id="t16">Marges</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t48">
+										<sc:para xml:space="preserve" sc:id="t18">Taille ou orientation du papier</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t49">
+										<sc:para xml:space="preserve" sc:id="t20">Alimentation papier pour une imprimante</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t50">
+										<sc:para xml:space="preserve" sc:id="t22">Bordures de page</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t51">
+										<sc:para xml:space="preserve" sc:id="t24">Alignement vertical</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t52">
+										<sc:para xml:space="preserve" sc:id="t26">En-têtes et pieds de page</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t53">
+										<sc:para xml:space="preserve" sc:id="t28">Colonnes</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t54">
+										<sc:para xml:space="preserve" sc:id="t30">Numérotation des pages</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t55">
+										<sc:para xml:space="preserve" sc:id="t32">Numérotation des lignes</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t56">
+										<sc:para xml:space="preserve" sc:id="t34">Notes de bas de page et notes de fin</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

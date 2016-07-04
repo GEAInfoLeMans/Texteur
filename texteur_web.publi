@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:webRoot xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:webRootM>
+			<sp:version>1.0</sp:version>
+			<sp:date>Septembre 2013</sp:date>
+			<sp:auth>
+				<op:sTxt>
+					<sc:para xml:space="preserve" sc:id="t2">Laurent Berger Département Gestion des Entreprises et des Administrations</sc:para>
+				</op:sTxt>
+			</sp:auth>
+			<sp:logo sc:refUri="/Texteur/Image/GEA.png"/>
+			<sp:settings/>
+		</op:webRootM>
+		<sp:ue sc:refUri="/module_texteur.xml"/>
+	</op:webRoot>
+</sc:item>

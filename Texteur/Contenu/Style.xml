@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Style</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>Attribut</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Un attribut est une caractéristique appliquée à un élément du texte.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:ex>
+					<op:pbTi>
+						<sp:title>Attribut</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t7">Voici une liste de quelques attributs :</sc:para>
+								<sc:itemizedList sc:id="t14">
+									<sc:listItem sc:id="t15">
+										<sc:para xml:space="preserve" sc:id="t8"> police et corps</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t16">
+										<sc:para xml:space="preserve" sc:id="t9"> gras, souligné, italique...</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t17">
+										<sc:para xml:space="preserve" sc:id="t10"> espace avant/après paragraphe</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t18">
+										<sc:para xml:space="preserve" sc:id="t11"> retrait de paragraphe</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t19">
+										<sc:para xml:space="preserve" sc:id="t12"> Interligne</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t20">
+										<sc:para xml:space="preserve" sc:id="t13"> espacement des caractères</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:ex>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>Style</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Un style est ensemble d'attributs appliqués à un caractère, un paragraphe ou une section.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Style par défaut</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t21">Lorsque vous entrez du texte dans Word le style &quot;normal&quot; utilisé par défaut.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Changer le style d'un paragraphe</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t22">Les boutons du groupe Style du ruban accueil permettent de changer le style. Si vous amenez la souris sur l'un des styles, le paragraphe où se situe le curseur passera dans le style. Cette modification est validée si vous cliquez sur le style</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:warning>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t23">Le curseur doit être dans le paragraphe pour que la modification soit visible. Certains styles ne s'appliquent à des mots ou bien à des mots sélectionnés. ils n'ont aucun effet sur le paragraphe.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:warning>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

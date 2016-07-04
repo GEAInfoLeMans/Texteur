@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>En-tête et pied de page</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Les en-têtes et les pieds de page sont les zones qui apparaissent dans les marges supérieure et inférieure de chaque page dans un document.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t8" sc:refUri="/Texteur/Image/entete.png"/></sc:para>
+								<sc:para xml:space="preserve" sc:id="t5">Vous pouvez insérer du texte ou des images dans les en-têtes et les pieds de page (des numéros de page, la date, un logo de société, le titre ou le nom de fichier du document ou le nom de l'auteur, par exemple) ; ils seront imprimés dans la partie supérieure ou inférieure de chaque page dans un document.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t6">Pour accéder aux sections d'en-tête et de pied de page: [Affichage [En-tête et pied de page]]</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Insertion d'une en-tête ou d'un pied de page</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t9">Ces opérations se font à partir du groupe &quot;En-tête et pied de page&quot; du ruban Insertion.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/entete.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Pied de page avec date, et numérotation des pages</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t10">Ces opérations se font aussi à partir du groupe &quot;En-tête et pied de page&quot; du ruban Insertion.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/piedDePage.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

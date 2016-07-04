@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:assmntUa xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Interface de Word</sp:title>
+		</op:uM>
+		<sp:quiz sc:refUri="/Texteur/Exercice/interface1.quiz"/>
+		<sp:quiz sc:refUri="/Texteur/Exercice/interface2.quiz"/>
+		<sp:quiz sc:refUri="/Texteur/Exercice/interface3.quiz"/>
+		<sp:quiz sc:refUri="/Texteur/Exercice/interface4.quiz"/>
+		<sp:quiz sc:refUri="/Texteur/Exercice/interface5.quiz"/>
+	</op:assmntUa>
+</sc:item>

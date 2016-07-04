@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Notes de bas de page</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t2">Les notes de bas de page et les notes de fin s'utilisent dans les documents imprimés pour expliquer, annoter ou fournir des références sur le texte d'un document. Vous pouvez recourir à des notes de bas de page pour des commentaires détaillés et à des notes de fin pour citer vos sources, par exemple. </sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t4" sc:refUri="/Texteur/Image/noteBas.png"/></sc:para>
+								<sc:orderedList sc:id="t11">
+									<sc:listItem sc:id="t12">
+										<sc:para xml:space="preserve" sc:id="t5">Marques d'appel de notes de bas de page et de notes de fin</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t13">
+										<sc:para xml:space="preserve" sc:id="t6">Ligne de séparation</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t14">
+										<sc:para xml:space="preserve" sc:id="t7">Texte de la note de bas de page</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t15">
+										<sc:para xml:space="preserve" sc:id="t8">Texte de la note de fin</sc:para>
+									</sc:listItem>
+								</sc:orderedList>
+								<sc:para xml:space="preserve" sc:id="t9">Une note de bas de page ou une note de fin est constituée de deux parties liées, à savoir la marque d'appel de note et le texte de la note correspondante.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t10">La taille du texte des notes n'est pas limitée. En outre, vous pouvez taper le texte des notes de la même manière que n'importe quel autre texte. Vous pouvez personnaliser les séparateurs de notes, autrement dit les lignes qui séparent le texte du document du texte de la note.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t16">L'ajout de note se fait à partir du groupe &quot;Note de bas de page&quot; du ruban &quot;Références&quot;.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/note.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

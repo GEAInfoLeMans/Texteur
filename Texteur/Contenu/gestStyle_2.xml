@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Gestion des styles et ruban office</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:warning>
+					<op:pbTi>
+						<sp:title>Le ruban ne modifie pas votre style</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">L'action dans les rubans ne modifie pas le style du paragraphe. Un nouveau style est ajouté. Le nom de ce style est le nom du premier style auquel est ajouté le nom de modification. Le nom du style devient alors difficilement compréhensible et le nombre de style dans le document augment.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">De plus les modifications ne se propagent pas à l'ensemble du document.</sc:inlineStyle></sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/styleRuban.mp4">
+							<op:resInfoM/>
+						</sp:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Pour éviter cela il faut utiliser le menu contextuel lorsque le curseur est dans le paragraphe.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/styleRubMaj.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:warning>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

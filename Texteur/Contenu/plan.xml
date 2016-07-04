@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Création d'un plan et d'une table des matières</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>Plan</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Les rapports sont généralement structurés en chapitre, sous chapitre...</sc:para>
+								<sc:para xml:space="preserve" sc:id="t6">Microsoft Word parle de plan.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t7">Un plan est construit en définissant une hiérarchie construite à partir de niveau n ou de style de type "Titre n". Le texte lui même dans cette organisation est appelé corps de texte.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t8">A partir de cette organisation hiérarchique, Word peut insérer une table des matières avec les numéros de page associés.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t9">Le niveau peut être fixé à partir du mode plan ou bien en choisissant le style "Titre" dans le groupe "Style" de l'onglet "Accueil".</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Création du plan, insertion de la table des matières et mise à jour.</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t10">La vidéo suivante montre comment créer le plan.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/creationTable.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Utilisation du mode plan pour déplacer des chapitres</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t11">La vidéo suivante montre comment insérer une table des matières.</sc:para>
+								<sc:para xml:space="preserve">Avant d'imprimer la table des matières doit être mise à jour pour tenir compte des modifications du document.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/utilPlan.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Numérotation des chapitres</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t12">Pour numéroter les chapitres il faut utiliser le bouton <sc:inlineStyle role="emp">"liste à plusieurs niveaux"</sc:inlineStyle> dans le groupe "paragraphe" du ruban "Accueil".</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/numCha.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

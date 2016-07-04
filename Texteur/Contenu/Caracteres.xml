@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Caractères</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Caractères accentués</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">Quelques raccourcis clavier permettent d'obtenir des caractères accentués :</sc:para>
+								<sc:itemizedList sc:id="t18">
+									<sc:listItem sc:id="t20">
+										<sc:para xml:space="preserve" sc:id="t7">Ctrl + 4 majuscule : il faut appuyer sur la touche Ctrl sans relâcher appuyer sur le 4 (au dessus du E et R, pas celui du pavé numérique), relâcher les deux touches et appuyer sur le E.</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t21">
+										<sc:para xml:space="preserve" sc:id="t8">Accent grave sur majuscule</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t22">
+										<sc:para xml:space="preserve" sc:id="t9">alt gr + 7 majuscule (respecter les consignes précédentes)</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t23">
+										<sc:para xml:space="preserve" sc:id="t10">¨ sur lettre</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t24">
+										<sc:para xml:space="preserve" sc:id="t11">Shift ¨ et lettre</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t25">
+										<sc:para xml:space="preserve" sc:id="t12">^ sur lettre</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t26">
+										<sc:para xml:space="preserve" sc:id="t13">^ et lettre</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t27">
+										<sc:para xml:space="preserve" sc:id="t14">Oe, Ae collé</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t28">
+										<sc:para xml:space="preserve" sc:id="t15">Ctrl &amp; et a ou o</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t29">
+										<sc:para xml:space="preserve" sc:id="t16">Tildé</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t30">
+										<sc:para xml:space="preserve" sc:id="t17">~ •Alt gr é et lettre</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t31">Une autre solution est de laisser le correcteur orthographique travailler et de valider ses propositions.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Insertion de symboles ou de caractères spéciaux</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t32">L'insertion de caractères spéciaux peut se faire à partir de [insertion[symboles[symbole[autres symboles]]]]</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/insertion.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>Caractères masqués</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t34">Les caractères masqués sont des caractères utilisés par Word pour présenter le texte comme les sauts de paragraphes, saut de page,...</sc:para>
+								<sc:para xml:space="preserve">Dans le mode caractères masqués les espaces sont remplacés par des &quot;.&quot;.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Affichage des Caractères masqués</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t33">Il faut appuyer le bouton caractères masqués dans le groupe &quot;Paragraphe&quot; du ruban accueil&quot;.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/cMasques.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Options de correction automatique</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t38">Word par défaut effectue des corrections automatiques. Parfois certaines peuvent être génantes. Par exemple les citations sont entourées de &quot; ouvrant et fermant ou bien vous avez besoin d'écrire (c). Il faut alors les désactiver.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/opCorr.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

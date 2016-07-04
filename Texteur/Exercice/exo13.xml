@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:exeM>
+			<sp:title>Exo 13 :Plan, en-tête, pied de page et page de titre</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve" sc:id="t2">Le texte de l'exercice 13 est <sc:uLink role="docLnk" sc:id="t3" sc:refUri="/Texteur/Ressource/exo13_texte.docx">ici</sc:uLink>.</sc:para>
+						<sc:para xml:space="preserve">Il faut créer la table des matières et les en-tête et pied de page selon les informations disponibles dans l'image suivante :</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t4" sc:refUri="/Texteur/Image/exo13_1.png"/></sc:para>
+						<sc:para xml:space="preserve">La page de titre est centrée verticalement :</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t5" sc:refUri="/Texteur/Image/exo13_2.png"/></sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+	</op:practUc>
+</sc:item>

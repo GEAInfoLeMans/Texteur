@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:ue xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:ueM>
+			<sp:title>Utilisation d'un texteur</sp:title>
+		</op:ueM>
+		<sp:obj>
+			<op:sTxt>
+				<sc:para xml:space="preserve" sc:id="t6">Cette présentation de l'usage d'un traitement de texte ou texteur est basée sur l'utilisation de Microsoft Word 2007. Elle est illustrée par de nombreux documents issus de l'aide de en ligne de Microsoft Word.</sc:para>
+				<sc:para xml:space="preserve" sc:id="t7">D'autres traitement de texte existent comme par exemple open office ou libre office qui sont des logiciels libre. </sc:para>
+			</op:sTxt>
+		</sp:obj>
+		<sp:courseUa sc:refUri="/Texteur/Presentation.xml"/>
+		<sp:courseUa sc:refUri="/Texteur/MForme.xml"/>
+		<sp:courseUa sc:refUri="/Texteur/outils.xml"/>
+		<sp:courseUc sc:refUri="/Texteur/Examen/Examen .xml"/>
+	</op:ue>
+</sc:item>

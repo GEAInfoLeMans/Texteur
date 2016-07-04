@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:exeM>
+			<sp:title>Exo7-Zone de texte</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve" sc:id="t2">Vous devez reproduire le document suivant :</sc:para>
+						<sc:para xml:space="preserve" sc:id="t17"><sc:inlineImg role="ico" sc:id="t34" sc:refUri="/Texteur/Image/exo7_1.png"/></sc:para>
+						<sc:para xml:space="preserve" sc:id="t8">La toucheTab permet de positionner les différents éléments du texte.</sc:para>
+						<sc:para xml:space="preserve" sc:id="t26">Le style utilisé pour le texte est </sc:para>
+						<sc:para xml:space="preserve" sc:id="t29"><sc:inlineImg role="ico" sc:id="t35" sc:refUri="/Texteur/Image/exo7_2.png"/></sc:para>
+						<sc:para xml:space="preserve">Le style de la zone de texte est </sc:para>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t36" sc:refUri="/Texteur/Image/exo7_3.png"/></sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+	</op:practUc>
+</sc:item>

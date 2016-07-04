@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Interface de word</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:basic>
+					<op:pbTi/>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t21">Les noms des principales zones de l'interface de Word sont sur cette figure.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/Interface.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:basic>
+				<sp:basic>
+					<op:pbTi>
+						<sp:title>Ruban</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t5">Le ruban a été conçu pour vous aider à trouver rapidement les commandes dont vous avez besoin pour réaliser une tâche. Les commandes sont organisées en groupes logiques, lesquels sont regroupés dans des onglets. Chaque onglet a trait à un type d'activité, comme la rédaction ou la mise en forme d'une page. Pour réduire l'encombrement, certains onglets s'affichent uniquement lorsque nécessaire. Par exemple, l'onglet Outils Image apparaît uniquement lorsqu'une image est sélectionné</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/ruban.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:basic>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Réduire temporairement le ruban</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t7">Pour réduire rapidement le ruban, double-cliquez sur le nom de l'onglet actif. Pour restaurer le ruban, double-cliquez de nouveau sur un onglet.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t8">Raccourci clavier Pour réduire ou restaurer le ruban, appuyez sur Ctrl+F1.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Réduire systématiquement le ruban</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:orderedList sc:id="t14">
+									<sc:listItem sc:id="t15">
+										<sc:para xml:space="preserve" sc:id="t10">Cliquez sur Personnaliser la barre d'outils Accès rapide Image du bouton.</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t16">
+										<sc:para xml:space="preserve" sc:id="t11">Dans la liste, cliquez sur Réduire le ruban.</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t17">
+										<sc:para xml:space="preserve" sc:id="t12">Pour utiliser le ruban lorsqu'il est réduit, cliquez sur l'onglet que vous voulez utiliser, puis sur l'option ou la commande voulue.</sc:para>
+									</sc:listItem>
+								</sc:orderedList>
+								<sc:para xml:space="preserve" sc:id="t13">Par exemple, le ruban étant réduit, vous pouvez sélectionner du texte dans votre document Microsoft Office Word, cliquer sur l'onglet Accueil, puis dans le groupe Police, cliquer sur la taille de texte voulue. Après avoir cliqué sur la taille, le ruban se réduit de nouveau.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/ruban.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Paramétrage de la barre d'état</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t22">La barre d'état peut être paramétrée en utilisant le menu contextuel</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/barreEtat.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Page de garde</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t2">La page de garde d'un document (la couverture) ne comporte pas d'en-tête ni de pied de page. Word 2007 permet de présenter une page de garde à partir du ruban insertion. Si les présentations par défaut ne conviennent pas il faut alors insérer une <sc:uLink role="ucLnk" sc:id="t4" sc:refUri="/Texteur/Contenu/section.xml">nouvelle section</sc:uLink> et fixer les<sc:uLink role="ucLnk" sc:id="t5" sc:refUri="/Texteur/Contenu/orientation.xml"> paramètres</sc:uLink> de la section associée à la page de garde.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

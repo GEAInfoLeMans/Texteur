@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:exeM>
+			<sp:title>Exo 13 :Plan, en-tête, pied de page et page de titre</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve" sc:id="t2">Reprendre la solution de l'exercice 13 et ajouter les colonnes indiquées dans cette vidéo.</sc:para>
+					</op:txt>
+				</sp:txt>
+				<sp:res sc:refUri="/Texteur/video/sectColonne.mp4">
+					<op:resInfoM/>
+				</sp:res>
+			</op:res>
+		</sp:desc>
+	</op:practUc>
+</sc:item>

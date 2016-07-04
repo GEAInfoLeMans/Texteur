@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Zone de texte</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Une zone de texte est un élément qui vient se superposer au texte de la page. Il peut contenir du texte, des images...</sc:para>
+								<sc:para xml:space="preserve">Cette zone de texte est caractérisée par  </sc:para>
+								<sc:para xml:space="preserve">une position par rapport à la page ou par rapport aux style du texte de la page</sc:para>
+								<sc:para xml:space="preserve">une forme avec un contour et un fond</sc:para>
+								<sc:para xml:space="preserve">une orientation pour le texte</sc:para>
+								<sc:para xml:space="preserve">un comportement par rapport au texte de la page, l'habillage.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Insertion d'une zone de texte</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">la vidéo suivante montre comment insérer une zone de texte.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/zoneTexte1.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Insertion d'une zone de texte</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t5">La vidéo suivante montre comment modifier la forme de la zone de texte.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/zoneTexte2.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Comportement du texte de la page par rapport à la zone de texte</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t6"> La vidéo suivante montre comment modifier l'habillage de la zone de texte.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/zoneTexte3.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Modification des points d'habillage</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t6">Le texte de la page se place par rapport aux lignes définies par les points d'habillage. Ce ne sont des points indépendants du contour de la zone de texte. La vidéo suivante montre comment modifier les points d'habillage. </sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/zoneTexte4.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

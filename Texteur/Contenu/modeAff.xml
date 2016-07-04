@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Mode d'affichage</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>Mode page</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">C'est le mode utilisé par défaut dans Word.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t7" sc:refUri="/Texteur/Image/modePage.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>mode brouillon ou normal</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t2"><sc:inlineImg role="ico" sc:id="t6" sc:refUri="/Texteur/Image/modeBroui.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>mode plan</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t8">C'est le mode utilisé pour visualiser l'organisation des chapitres.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:id="t10" sc:refUri="/Texteur/Image/modePlan.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Changement du mode d'affichage</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t9">Les modes d'affichage sont accessible à partir du groupe &quot;Affciiage document&quot; du ruban affichage.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

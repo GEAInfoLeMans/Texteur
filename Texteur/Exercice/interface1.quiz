@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:mcgMur xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:exeM>
+			<sp:title>Zones de l'interface</sp:title>
+		</op:exeM>
+		<sc:question>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve" sc:id="t2">Où est le bouton Office ?</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sc:question>
+		<sc:backgroundImage sc:refUri="/Texteur/Image/zoneWord.png"/>
+		<sc:choices>
+			<sc:choice solution="checked">
+				<sc:zone>
+					<sp:shape>rect</sp:shape>
+					<sp:coords>3,1,32,37</sp:coords>
+				</sc:zone>
+			</sc:choice>
+			<sc:choice solution="unchecked">
+				<sc:zone>
+					<sp:shape>rect</sp:shape>
+					<sp:coords>38,24,384,39</sp:coords>
+				</sc:zone>
+			</sc:choice>
+			<sc:choice solution="unchecked">
+				<sc:zone>
+					<sp:shape>rect</sp:shape>
+					<sp:coords>411,168,523,181</sp:coords>
+				</sc:zone>
+			</sc:choice>
+			<sc:choice solution="unchecked">
+				<sc:zone>
+					<sp:shape>rect</sp:shape>
+					<sp:coords>513,20,534,36</sp:coords>
+				</sc:zone>
+			</sc:choice>
+			<sc:choice solution="unchecked">
+				<sc:zone>
+					<sp:shape>rect</sp:shape>
+					<sp:coords>517,103,537,117</sp:coords>
+				</sc:zone>
+			</sc:choice>
+		</sc:choices>
+	</op:mcgMur>
+</sc:item>

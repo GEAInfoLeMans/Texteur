@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<op:uM>
+			<sp:title>Recherche et remplacement</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve" sc:id="t4">Utilisez Microsoft Word pour rechercher et remplacer du texte, une mise en forme, des marques de paragraphe, des sauts de page et d'autres éléments. Vous pouvez élargir votre recherche en utilisant des caractères génériques et des codes.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t5">Rechercher du texte</sc:para>
+								<sc:para xml:space="preserve" sc:id="t6">Vous pouvez rapidement rechercher toutes les occurrences d'un mot ou d'une expression spécifique.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t7">Vous pouvez remplacer automatiquement du texte (par exemple, vous pouvez remplacer « Acme » par « Apex »).</sc:para>
+								<sc:para xml:space="preserve" sc:id="t8">Vous pouvez rechercher et remplacer une mise en forme spécifique</sc:para>
+								<sc:para xml:space="preserve" sc:id="t9">Vous pouvez rechercher et remplacer ou supprimer une mise en forme de caractères.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t10">Vous pouvez rechercher et remplacer des marques de paragraphe, des sauts de page et d'autres éléments</sc:para>
+								<sc:para xml:space="preserve" sc:id="t11">Vous pouvez aisément rechercher et remplacer des caractères spéciaux et des éléments de document tels que des sauts de page ou des tabulations.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t35">Extrait de l'aide de Word</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/aide_1.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t36">Extrait de l'aide de Word</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/aide_2.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t37">Extrait de l'aide de Word</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/aide_3.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve" sc:id="t38">Extrait de l'aide de Word</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Texteur/Image/aide_4.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>
