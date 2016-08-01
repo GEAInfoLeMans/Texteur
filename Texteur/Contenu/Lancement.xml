@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
-			<sp:title>Démarrage du logiciel Word 2007</sp:title>
+			<sp:title>Démarrage du logiciel Word 2016</sp:title>
 		</op:uM>
 		<sp:pb>
 			<op:pb>

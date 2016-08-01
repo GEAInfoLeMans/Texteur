@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:courseUa xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:courseUa xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
 			<sp:title>Présentation d'un texteur</sp:title>
 		</op:uM>
@@ -9,7 +9,7 @@
 				<sp:txt>
 					<op:txt>
 						<sc:para xml:space="preserve" sc:id="t3"><sc:inlineStyle role="emp">Vous devez avoir dans votre dossier personnel un dossier nommé Texteur. Tous les exemples et les exercices du cours devront être sauvegardés dans ce dossier sous la forme NOMPRENOMEXaaGrbb où aa est le numéro de l'exercice ou de l'exemple et bb le numéro de votre groupe.</sc:inlineStyle></sc:para>
-						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Seule La version Word 2007 est utilisée dans ce cours et pour le contrôle continu. Aucune autre version n'est tolérée</sc:inlineStyle>.</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Seule la version Word 2016 pour Windows est utilisée dans ce cours et pour le contrôle continu. Aucune autre version n'est tolérée</sc:inlineStyle>.</sc:para>
 					</op:txt>
 				</sp:txt>
 			</op:res>
