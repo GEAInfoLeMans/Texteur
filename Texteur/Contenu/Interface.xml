@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
 			<sp:title>Interface de word</sp:title>
 		</op:uM>
@@ -96,6 +96,18 @@
 						<sp:res sc:refUri="/Texteur/video/barreEtat.mp4">
 							<op:resInfoM/>
 						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Affichage de la règle</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">La règle peut être affichée à partir de l'onglet affichage.</sc:para>
+							</op:txt>
+						</sp:txt>
 					</op:res>
 				</sp:meth>
 			</op:pb>
