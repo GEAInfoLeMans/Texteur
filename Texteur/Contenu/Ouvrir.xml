@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
 			<sp:title>Créer, ouvrir ou enregistrer un document</sp:title>
 		</op:uM>
@@ -13,8 +13,11 @@
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve" sc:id="t4">Une première méthode est d'utiliser le bouton office et l'article &quot;nouveau&quot;.</sc:para>
-								<sc:para xml:space="preserve" sc:id="t7">Une seconde méthode est de créer dans Windows 7 un &quot;document Microsoft Office Word&quot; en utilisant le menu contextuel du dossier.</sc:para>
+								<sc:para xml:space="preserve">Selon l''écran de démarrage choisi au lancement de Word les méthodes peuvent varier.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t4">Dans l'écran de démarrage cliquer dans document vide.</sc:para>
+								<sc:para xml:space="preserve">Dans le menu fichier sélectionner l'article Nouveau et vous retrouvez l'écran de démarrage.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Texteur/Image/EcranDemarrage.png"/></sc:para>
+								<sc:para xml:space="preserve" sc:id="t7">Une seconde méthode est de créer dans Windows 7 un "document Microsoft Office Word" en utilisant le menu contextuel du dossier.</sc:para>
 							</op:txt>
 						</sp:txt>
 					</op:res>
@@ -38,7 +41,7 @@
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve" sc:id="t12">Une première méthode est d'utiliser le bouton office et l'article &quot;enregistrer sous&quot; et de choisr un nouveau nom.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t12">Une première méthode est d'utiliser le bouton office et l'article "enregistrer sous" et de choisir un nouveau nom.</sc:para>
 								<sc:para xml:space="preserve" sc:id="t13">Une seconde méthode est sélectionner le document dans Windows 7 et d'effectuer un copier/coller du document et de renommer le document copier.</sc:para>
 							</op:txt>
 						</sp:txt>
@@ -46,12 +49,12 @@
 				</sp:comp>
 				<sp:comp>
 					<op:pbTi>
-						<sp:title>Enregistrer un document destiné à être lu par un autre logiciel</sp:title>
+						<sp:title>Choisir le format du document destiné à être lu par un autre logiciel</sp:title>
 					</op:pbTi>
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve" sc:id="t10">Il faut choisir l'option Enregistrer Sous dans le bouton Office et choir le format dans la liste déroulante.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t10">Il faut choisir l'option Enregistrer Sous dans le menu fichier et choir le format dans la liste déroulante.</sc:para>
 							</op:txt>
 						</sp:txt>
 						<sp:res sc:refUri="/Texteur/video/enrOpt.mp4">
@@ -66,8 +69,8 @@
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve" sc:id="t8">Une première méthode est d'utiliser le bouton Office et l'article &quot;ouvrir&quot; et de parcourir l'arborescence de Windows.</sc:para>
-								<sc:para xml:space="preserve" sc:id="t9">Une seconde solution est de parcourir l'arborescence de Windows 7 et de cliquer deux fois sur le document.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t8">Une première méthode est de retrouver son document dans les récents dans l'interface de démarrage. ou d'utiliser le menu fichier et l'article ouvrir et de parcourir l'arborescence de Windows.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t9">Une seconde solution est de parcourir l'arborescence de Windows 7 dans Windows et de cliquer deux fois sur le document.</sc:para>
 							</op:txt>
 						</sp:txt>
 					</op:res>
