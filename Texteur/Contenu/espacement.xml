@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
-			<sp:title>Espacement entre paragraphe</sp:title>
+			<sp:title>Retrait gauche, droite de de première ligne d'un paragraphe</sp:title>
 		</op:uM>
 		<sp:pb>
 			<op:pb>
@@ -13,19 +13,19 @@
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve" sc:id="t5">Le réglage </sc:para>
+								<sc:para xml:space="preserve" sc:id="t5">Le réglage peut se faire avec la souris lorsque la règle est visible et un utilisant les taquets ou avec le clavier soit à partir du ruban ou du style de paragraphe.</sc:para>
 							</op:txt>
 						</sp:txt>
 					</op:res>
 				</sp:meth>
 				<sp:meth>
 					<op:pbTi>
-						<sp:title>Modification de l'espacement avec le paragraphe précédent et suivant avec la souris</sp:title>
+						<sp:title>Modification des retraits d'un paragraphe précédent et suivant avec la souris</sp:title>
 					</op:pbTi>
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve" sc:id="t8">Il suffit de cliquer dans les boutons du groupe paragraphe du ruban mise en page.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t8">Il suffit de déplacer les taquets du paragraphe dans la règle.</sc:para>
 							</op:txt>
 						</sp:txt>
 						<sp:res sc:refUri="/Texteur/video/taquetRg.mp4">

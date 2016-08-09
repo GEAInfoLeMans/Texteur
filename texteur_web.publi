@@ -2,7 +2,7 @@
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
 	<op:webRoot xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:webRootM>
-			<sp:version>1.0</sp:version>
+			<sp:version>2.0</sp:version>
 			<sp:date>Septembre 2016</sp:date>
 			<sp:auth>
 				<op:sTxt>
