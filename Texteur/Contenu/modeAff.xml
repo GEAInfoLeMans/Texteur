@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
 			<sp:title>Mode d'affichage</sp:title>
 		</op:uM>
@@ -21,7 +21,7 @@
 				</sp:def>
 				<sp:def>
 					<op:pbTi>
-						<sp:title>mode brouillon ou normal</sp:title>
+						<sp:title>mode brouillon (ou normal)</sp:title>
 					</op:pbTi>
 					<op:res>
 						<sp:txt>
@@ -51,7 +51,7 @@
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve" sc:id="t9">Les modes d'affichage sont accessible à partir du groupe &quot;Affciiage document&quot; du ruban affichage.</sc:para>
+								<sc:para xml:space="preserve" sc:id="t9">Les modes d'affichage sont accessible à partir du groupe "Affichage document" du ruban affichage.</sc:para>
 							</op:txt>
 						</sp:txt>
 					</op:res>

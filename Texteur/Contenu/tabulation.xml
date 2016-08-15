@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
 			<sp:title>Présentation d'éléments alignés en utilisant des tabulations</sp:title>
 		</op:uM>
@@ -19,7 +19,22 @@
 					</op:res>
 				</sp:info>
 				<sp:meth>
-					<op:pbTi/>
+					<op:pbTi>
+						<sp:title>Création des taquets de tabulation</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Vous pouvez créer les taquets de tabulation lorsque que vous modifiez les paramètres du styles.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Texteur/Image/tabulation.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Utilisation des tabulations</sp:title>
+					</op:pbTi>
 					<op:res>
 						<sp:txt>
 							<op:txt>
