@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
-	<op:expUc xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:op="utc.fr:ics/opale3" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
 			<sp:title>Création d'un style, application du style à un autre paragraphe.</sp:title>
 		</op:uM>
@@ -17,6 +17,24 @@
 							</op:txt>
 						</sp:txt>
 						<sp:res sc:refUri="/Texteur/video/creationStyle.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Application du style à un autre paragraphe</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Il faut mettre le curseur dans le paragraphe et cliquer dans le style correspondant (rapide). Une autre solution est </sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Texteur/video/ChgtStyle1.mp4">
+							<op:resInfoM/>
+						</sp:res>
+						<sp:res sc:refUri="/Texteur/video/ChgtStyle2.mp4">
 							<op:resInfoM/>
 						</sp:res>
 					</op:res>
