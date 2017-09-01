@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercice&nbsp;: Zones de l'interface [Utilisation d'un texteur]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.103 / Opale 3.6.100">
+  <meta name="revision" content="2017-09-01 14:23">
+  <link rel="start" href="module_texteur.html" title="Utilisation d'un texteur">
+  <meta name="author" content="Laurent Berger D&eacute;partement Gestion des Entreprises et des Administrations ">
+  <meta name="keywords" content>
+  <meta name="date" content="Septembre 2016">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"j71yzimv"};
+/*1*/ window.scLoadParams = {destUri:"/co/interface2.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_texteur.txt");
+	</script> </head>
+ <body class="default module quiz">
+  <div id="root"><header id="header" role="banner"><h1><span>Utilisation d'un texteur</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk quiz article 
+       mcgMur"><h2 class="hBk_ti"><span>Exercice&nbsp;: Zones de l'interface</span></h2><div class="hBk_co"><script type="text/JavaScript">
+var DLtjcX5ENwRkALryIv34d = {
+	fFreeMarker : false,
+	fSingleResp : false,
+	fHighlight : "hover",
+
+		fTooltipOptions : {CLASS:"tooltip"},
+
+	fId : "DLtjcX5ENwRkALryIv34d",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "play" : {
+		var vForm = document.forms.DLtjcX5ENwRkALryIv34d_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+		this.fDisableInteraction = false;
+
+var vLoadRespSession = "";
+for (var i=0; i < vForm.length; i++) {
+			var vInput = vForm.elements[i];
+			vInput.checked = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vInput.value);
+			var vRespMarker = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vInput.value+"_marker");
+			if(vRespMarker != null) vInput.fMarker = scServices.dataUtil.deserialiseObjJs(vRespMarker);
+		}
+
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N2_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N3_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N4_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("DLtjcX5ENwRkALryIv34d_S_N67"), false);
+
+		scAssmntMgr.gmcqUpdateUi("DLtjcX5ENwRkALryIv34d");
+
+		this.mapClick = function(pInput, pIdx, pEvent) {
+			if (this.fDisableInteraction) return false;
+			pEvent = pEvent || window.event;
+			if (scCoLib.isIE) pEvent.cancelBubble = true;
+			pInput.checked = !pInput.checked;
+			this.setResp(pInput, pIdx, pEvent);
+			return false;
+		}
+var vRespSession = "";
+
+			if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+
+			this.setResp = function(pInput, pIdx, pEvent) {
+
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, pIdx, pInput.checked);
+
+
+				scAssmntMgr.gmcqUpdateUi("DLtjcX5ENwRkALryIv34d");
+				this.computeScore();
+				scServices.assmntMgr.commit();
+			}				
+
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = true && ! vForm.elements[0].checked && ! vForm.elements[1].checked && ! vForm.elements[2].checked && ! vForm.elements[3].checked && vForm.elements[4].checked ? this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for (var i=0; i < vForm.length; i++) {
+			var vInput = vForm.elements[i];
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, vInput.value, vInput.checked);
+		}
+}
+this.computeScore();
+
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionN8b : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN67 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N_score"), "invisible");
+this.setSolution(false); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N0_choiceExp"), "collapsed"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N1_choiceExp"), "collapsed"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N2_choiceExp"), "collapsed"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N3_choiceExp"), "collapsed"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N4_choiceExp"), "collapsed"); 
+		scAssmntMgr.gmcqUpdateUi("DLtjcX5ENwRkALryIv34d");
+
+		} else {
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N_score"), "visible");
+this.setSolution(true); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N0_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N1_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N2_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N3_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("DLtjcX5ENwRkALryIv34d_N4_choiceExp"), "visible"); 
+		scAssmntMgr.gmcqUpdateUi("DLtjcX5ENwRkALryIv34d");
+
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.DLtjcX5ENwRkALryIv34d_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("DLtjcX5ENwRkALryIv34d_SNaa");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.DLtjcX5ENwRkALryIv34d_form.lastChild;
+		while(vTR.nodeType!=1) vTR = vTR.previousSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolUnche " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolUnche " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolUnche " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolUnche " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolCheck " + vTR.className;
+			vTR = vTR.nextSibling;
+
+		}
+		scAssmntMgr.gmcqSetSolution("DLtjcX5ENwRkALryIv34d", pShown);
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		scAssmntMgr.gmcqInitUi("DLtjcX5ENwRkALryIv34d");
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("DLtjcX5ENwRkALryIv34d_A");
+		vNodeRoot.style.display = "block"; 
+		scAssmntMgr.gmcqHighlight(this);
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = scOnUnloads[scOnUnloads.length] = DLtjcX5ENwRkALryIv34d;
+</script><div id="DLtjcX5ENwRkALryIv34d_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>O&ugrave; est le bouton permettant d'acc&eacute;der &agrave; la r&egrave;gle&nbsp;?</p></div></div><div class="response" aria-live="polite"><div class="choiceMap "><form action name="DLtjcX5ENwRkALryIv34d_form" id="DLtjcX5ENwRkALryIv34d_form"><div style="position:relative;width:534px;height:181px;" class="choiceMap_map "><img src="../res/zoneWord.png" width="534" height="181" alt class="choiceMap_img "><div style="position:absolute;left:15px;top:15px;width:6px;height:7px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:176px;top:30px;width:69px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:456px;top:173px;width:22px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:521px;top:26px;width:4px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:525px;top:109px;width:4px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><img src="../lib-sc/assmntDhtmlTransf/empty.gif" width="534" height="181" alt usemap="#mapDLtjcX5ENwRkALryIv34d" style="position:absolute;border:0px;left:0px;top:0px;" class="choiceMap_epy "><map name="mapDLtjcX5ENwRkALryIv34d"><area shape="rect" coords="3,1,32,37" href="#" onclick="DLtjcX5ENwRkALryIv34d.mapClick(sc$('DLtjcX5ENwRkALryIv34d_0'),0,event); return false;"><area shape="rect" coords="38,24,384,39" href="#" onclick="DLtjcX5ENwRkALryIv34d.mapClick(sc$('DLtjcX5ENwRkALryIv34d_1'),1,event); return false;"><area shape="rect" coords="411,168,523,181" href="#" onclick="DLtjcX5ENwRkALryIv34d.mapClick(sc$('DLtjcX5ENwRkALryIv34d_2'),2,event); return false;"><area shape="rect" coords="513,20,534,36" href="#" onclick="DLtjcX5ENwRkALryIv34d.mapClick(sc$('DLtjcX5ENwRkALryIv34d_3'),3,event); return false;"><area shape="rect" coords="517,103,537,117" href="#" onclick="DLtjcX5ENwRkALryIv34d.mapClick(sc$('DLtjcX5ENwRkALryIv34d_4'),4,event); return false;"></map></div><table><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="DLtjcX5ENwRkALryIv34d_0" id="DLtjcX5ENwRkALryIv34d_0" value="0" onclick="DLtjcX5ENwRkALryIv34d.setResp(this, 0, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="DLtjcX5ENwRkALryIv34d_1" id="DLtjcX5ENwRkALryIv34d_1" value="1" onclick="DLtjcX5ENwRkALryIv34d.setResp(this, 1, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="DLtjcX5ENwRkALryIv34d_2" id="DLtjcX5ENwRkALryIv34d_2" value="2" onclick="DLtjcX5ENwRkALryIv34d.setResp(this, 2, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="DLtjcX5ENwRkALryIv34d_3" id="DLtjcX5ENwRkALryIv34d_3" value="3" onclick="DLtjcX5ENwRkALryIv34d.setResp(this, 3, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="DLtjcX5ENwRkALryIv34d_4" id="DLtjcX5ENwRkALryIv34d_4" value="4" onclick="DLtjcX5ENwRkALryIv34d.setResp(this, 4, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr></table></form></div></div><div class="toolbar"><a title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="DLtjcX5ENwRkALryIv34d.onActionN67(this); return false;" class="btnQuiz correction " id="DLtjcX5ENwRkALryIv34d_S_N67"><span>Correction</span></a><a title="Effacer les r&eacute;ponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="DLtjcX5ENwRkALryIv34d.onActionN8b(this); return false;" class="btnQuiz reset "><span>Recommencer</span></a><span class="scoreBox"><span class="score " aria-live="polite" id="DLtjcX5ENwRkALryIv34d_N_score"><span id="DLtjcX5ENwRkALryIv34d_SNaa"><span></span></span></span></span></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="interface1.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Exercice&nbsp;: Zones de l'interface)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="interface3.html" target="_self" class="btnNav next" title="Suivant (Exercice&nbsp;: Zones de l'interface)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="64"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_texteur_1.html"><a href="module_texteur_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 courseUa"><div class="lbl type_b" id="Presentation.html"><a href="Presentation.html" target="_self" class="item" type="up"><span>Pr&eacute;sentation d'un texteur</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 intro"><div class="lbl type_l" id="Presentation_1.html"><a href="Presentation_1.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="Typo.html"><a href="Typo.html" target="_self" class="item"><span>R&egrave;gles de typographie de la langue fran&ccedil;aise</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="Lancement.html"><a href="Lancement.html" target="_self" class="item"><span>D&eacute;marrage du logiciel Word 2016</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="Aide.html"><a href="Aide.html" target="_self" class="item"><span>Aide de word</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="Interface.html"><a href="Interface.html" target="_self" class="item"><span>Interface de word</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="Ouvrir.html"><a href="Ouvrir.html" target="_self" class="item"><span>Cr&eacute;er, ouvrir ou enregistrer un document</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="option.html"><a href="option.html" target="_self" class="item"><span>Option de word</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="Impression.html"><a href="Impression.html" target="_self" class="item"><span>Impression d'un document</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="interface1.html"><a href="interface1.html" target="_self" class="item"><span>Exercice&nbsp;: Zones de l'interface</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="interface2.html"><span class="item"><span>Exercice&nbsp;: Zones de l'interface</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="interface3.html"><a href="interface3.html" target="_self" class="item"><span>Exercice&nbsp;: Zones de l'interface</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="interface4.html"><a href="interface4.html" target="_self" class="item"><span>Exercice&nbsp;: Zones de l'interface</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="interface5.html"><a href="interface5.html" target="_self" class="item"><span>Exercice&nbsp;: Zones de l'interface</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="MForme.html"><a href="MForme.html" target="_self" class="item"><span>Mise en forme d'un document</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="outils.html"><a href="outils.html" target="_self" class="item"><span>Outils de word</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="Examen_.html"><a href="Examen_.html" target="_self" class="item"><span>Examen des ann&eacute;es pr&eacute;c&eacute;dentes</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_texteur.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>
