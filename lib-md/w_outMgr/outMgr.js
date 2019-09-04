@@ -3,6 +3,8 @@ var outMgr = {
 	fMnuPath : "ide:menu",
 	fOutPath : "ide:menu/des:ul.mnu",
 	fClsOut : "tplOut",
+	fClsOffUp : "btnOff",
+	fClsOffDown : "btnOff",
 	
 	fOut : null,
 	fTglBtn : null,
@@ -52,10 +54,10 @@ var outMgr = {
 		if ("ScSiRuleEnsureVisible" in window) vVisRule = new ScSiRuleEnsureVisible("ide:menu/des:.sel_yes/chi:div", "anc:ul.mnu");
 		this.fOut.className = this.fOut.className.replace("static", "");
 		this.fOut.style.overflow=this.fOverflowMethod;
-		this.fSrlUp = scDynUiMgr.addElement("div", this.fMnuFra, this.fCls+"SrlUpFra", this.fOut);
+		this.fSrlUp = scDynUiMgr.addElement("div", this.fMnuFra, this.fCls+"SrlUpFra "+this.fClsOffUp, this.fOut);
 		this.fSrlUpBtn = tplMgr.addBtn(this.fSrlUp, this.fCls+"SrlUpBtn", this.fStrings[0], this.fStrings[1]);
 		this.fSrlUpBtn.setAttribute("aria-hiden", "true");
-		this.fSrlDwn = scDynUiMgr.addElement("div", this.fMnuFra, this.fCls+"SrlDwnFra", this.fOut);
+		this.fSrlDwn = scDynUiMgr.addElement("div", this.fMnuFra, this.fCls+"SrlDwnFra "+this.fClsOffDown, this.fOut);
 		this.fSrlDwnBtn = tplMgr.addBtn(this.fSrlDwn, this.fCls+"SrlDwnBtn", this.fStrings[2], this.fStrings[3]);
 		this.fSrlDwnBtn.setAttribute("aria-hiden", "true");
 		
@@ -177,7 +179,7 @@ var outMgr = {
 	/* === Callbacks ========================================================== */
 	sToggleItem : function() {
 		try{
-			if (tplMgr.isNoAjax()) return;
+			if (tplMgr.isNoAjax()) return false;
 			outMgr.xToggleItem(this,false);
 			outMgr.scrollTask.checkBtn();
 		} catch(e){}
@@ -284,8 +286,6 @@ var outMgr = {
 	/* === Tasks ============================================================== */
 	/** outMgr.scrollTask : menu scroll timer & size task */
 	scrollTask : {
-		fClassOffUp : "btnOff",
-		fClassOffDown : "btnOff",
 		fSpeed : 0,
 		execTask : function(){
 			try {
@@ -302,17 +302,17 @@ var outMgr = {
 		},
 		checkBtn: function(){
 			var vScrollTop = outMgr.fOut.scrollTop;
-			var vBtnUpOff = outMgr.fSrlUp.className.indexOf(this.fClassOffUp);
+			var vBtnUpOff = outMgr.fSrlUp.className.indexOf(outMgr.fClsOffUp);
 			if(vScrollTop <= 0) {
-				if(vBtnUpOff < 0) outMgr.fSrlUp.className+= " "+this.fClassOffUp;
+				if(vBtnUpOff < 0) outMgr.fSrlUp.className+= " "+outMgr.fClsOffUp;
 			} else {
 				if(vBtnUpOff >= 0) outMgr.fSrlUp.className = outMgr.fSrlUp.className.substring(0, vBtnUpOff);
 			}
 		
 			var vContentH = scSiLib.getContentHeight(outMgr.fOut);
-			var vBtnDownOff = outMgr.fSrlDwn.className.indexOf(this.fClassOffDown);
+			var vBtnDownOff = outMgr.fSrlDwn.className.indexOf(outMgr.fClsOffDown);
 			if( vContentH - vScrollTop <= outMgr.fOut.offsetHeight){
-				if(vBtnDownOff < 0) outMgr.fSrlDwn.className+= " "+this.fClassOffDown;
+				if(vBtnDownOff < 0) outMgr.fSrlDwn.className+= " "+outMgr.fClsOffDown;
 			} else {
 				if(vBtnDownOff >=0) outMgr.fSrlDwn.className = outMgr.fSrlDwn.className.substring(0, vBtnDownOff);
 			}

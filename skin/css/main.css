@@ -15,16 +15,20 @@ light teal : #e0ecec
 	font-style: normal;
 }
 
+html {
+	font: 0.9em sans-serif;
+	height: 100%;
+	width: 100%;
+	overflow: hidden; /* for iOS */
+	position: fixed; /* for iOS */
+}
 
 body {
-	font: 0.9em sans-serif;
 	background-color: white;
+	height: 100%;
 }
 p{
 	margin:0.9em;
-}
-code{
-	font-size: larger;
 }
 .hidden{
 	display:none;
@@ -52,6 +56,9 @@ code{
 	font-size:1.5em;
 	padding-right: 1em;
 	padding-top: 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .default #accessibility, .sco #accessibility{
 	position: absolute;
@@ -86,6 +93,10 @@ code{
 	flex-flow: row;
 	position: relative;
 }
+.sco #main{
+	display: flex;
+	position: relative;
+}
 .default #toolbox{
 	order:1;
 	flex: 0 0 300px;
@@ -93,6 +104,10 @@ code{
 }
 .default #document{
 	order:2;
+	flex: 1 1 auto;
+	margin-top:60px;
+}
+.sco #document{
 	flex: 1 1 auto;
 	margin-top:60px;
 }
@@ -158,17 +173,17 @@ code{
 }
 
 /*--- DOCUMENT ---------------------------------------------------------------*/
-.default #document{
+.default #document, .sco #document{
 	display: flex;
 	flex-flow: column;
 }
-.default #content{
+.default #content, .sco #content{
 	order:1;
 	flex: 1 1 auto;
 	background: white;
 	position:relative;
 }
-.default .scroller{ /* DEBUG - IE11 : ne peut pas scroller un flex auto */
+.default .scroller, .sco .scroller{ /* DEBUG - IE11 : ne peut pas scroller un flex auto */
 	position:absolute;
 	top:0;
 	bottom:0;
@@ -176,6 +191,7 @@ code{
 	right:0;
 	padding:1em;
 	overflow:auto;
+	-webkit-overflow-scrolling: touch; /* for iOS */
 }
 .default #navigation{
 	order:2;
@@ -405,7 +421,6 @@ code{
 	bottom:0;
 	left:0;
 	right:0;
-	z-index:-2
 }
 .home section.article{
 	margin-top: 15%;
@@ -594,8 +609,8 @@ a.subWindow_x {
 	top:2px;
 }
 
-/*--- subWin.eval - FLEXBOX --------------------------------------------------*/
-.subWin.eval #root{
+/*--- subWin - FLEXBOX --------------------------------------------------*/
+.subWin #root{
 	position:absolute;
 	left:0;
 	right:0;
@@ -604,38 +619,36 @@ a.subWindow_x {
 	display: flex;
 	flex-flow: column;
 }
-.subWin.eval #header{
+.subWin #header{
 	position:absolute;
 	text-align:right;
 	width:100%;
 	z-index: 1;
 }
-.subWin.eval #accessibility{
+.subWin #accessibility{
 	padding-right:20px;
 }
-.subWin.eval #accessibility a{
+.subWin #accessibility a{
 	color: #434e52;
 }
-.subWin.eval #main{
-	flex: 1 1 auto;
-	display: flex;
-	flex-flow: column;
-	background: url(../img/tpl/back-bottom-straight.svg) no-repeat bottom;
-	background-size: 100% 60px;
-}
-.subWin.eval #footer{
-}
-.subWin.eval #document{
+.subWin #main{
 	flex: 1 1 auto;
 	display: flex;
 	flex-flow: column;
 }
-.subWin.eval #content{
+.subWin #footer{
+}
+.subWin #document{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+}
+.subWin #content{
 	flex: 1 1 auto;
 	position:relative;
 	padding:0 0.5em;
 }
-.subWin.eval .scroller{ /* DEBUG - IE11 : ne peut pas scroller un flex auto */
+.subWin .scroller{ /* DEBUG - IE11 : ne peut pas scroller un flex auto */
 	position:absolute;
 	top:0;
 	bottom:0;
@@ -644,13 +657,17 @@ a.subWindow_x {
 	padding:1em;
 	overflow-y: auto;
 }
+/*--- subWin.eval - NAVBAR ---------------------------------------------------*/
+.subWin.eval #main{
+	background: url(../img/tpl/back-bottom-straight.svg) no-repeat bottom;
+	background-size: 100% 60px;
+}
 .subWin.eval #navigation{
 	flex: 0 0 45px;
 	padding-top:15px;
 	position:relative;
 }
 
-/*--- subWin.eval - NAVBAR ---------------------------------------------------*/
 .subWin.eval #navigation .evalCounter{
 	position:absolute;
 	font-size:2em;
@@ -658,9 +675,6 @@ a.subWindow_x {
 	top:20px;
 	left:5px;
 }
-.subWin.eval #navigation .evalCounter{
-}
-
 .subWin.eval #navigation nav{
 	text-align:right;
 }
@@ -730,18 +744,11 @@ figcaption{
 	vertical-align: middle;
 	font-style:italic;
 }
-a.zoom{
-	display:inline-block;
-	padding:0;
-	margin: 0 0 -0.2em 0.5em;
+.zoom a{
+	padding:0.1em 0 0.1em 25px;
+	margin-left: 0.5em;
 	box-sizing: border-box;
-	width: 20px;
-	height: 20px; 
-	padding-left: 20px;
-	overflow: hidden;
-	background: url(../img/content/buttons.svg) no-repeat top;
-	background-size: 100%;
-	background-position: 0 -200px;
+	background: url(../img/content/buttons.svg) no-repeat 0 -200px / 20px auto;
 }
 a.tooltip_a.info{
 	display:inline-block;
@@ -1453,56 +1460,6 @@ a.schParent_tgle_o{
 /* === STOP - SEARCH ======================================================== */
 
 /* === START - PLAYER MEDIAS ================================================ */
-@font-face {
-  font-family: 'fontsmedia';
-  src: url('../font/fontsmedia.eot?11121778');
-  src: url('../font/fontsmedia.eot?11121778#iefix') format('embedded-opentype'),
-       url('../font/fontsmedia.woff2?11121778') format('woff2'),
-       url('../font/fontsmedia.woff?11121778') format('woff'),
-       url('../font/fontsmedia.ttf?11121778') format('truetype'),
-       url('../font/fontsmedia.svg?11121778#fontsmedia') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontsmedia";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-   font-size: 130%; 
- }
-.icon-muted:before { content: '\e800'; }
-.icon-mute:before { content: '\e801'; }
-.icon-fullScreen:before { content: '\e802'; }
-/*.icon-small:before { content: '\e803'; }*/
-.icon-subtitles:before { content: '\e805'; }
-.icon-audiodesc:before { content: '\e806'; margin: 0 0.3em 0 0.1em; font-size: 170%; }
-.icon-altvideo:before { content: '\e807'; margin: -0.2em 0 0; font-size: 120%; }
-.icon-transcript:before { content: '\e808'; font-size: 120%; }
-.icon-play:before { content: '\e809'; }
-.icon-pause:before { content: '\e80a'; }
-.icon-defaultvideo:before { content: '\e80b'; font-size: 155%; margin: -0.1em 0em 0 0.1em; }
-.icon-loader:before { content: '\E80F'; }
 .icon-ld:before,
 .icon-md:before,
 .icon-hd:before {
@@ -1515,15 +1472,51 @@ a.schParent_tgle_o{
 .icon-hd:before { content: 'HD'; margin-right: 0.4em; }
 
 
-.player_bk button span{
-	color: #BBB;
+[class^="icon-"], [class*=" icon-"]{
+	background:transparent url("../img/player/icons.svg") no-repeat 0 0;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+	margin: 0 5px;
 }
-.player_bk button:not([disabled]):hover span,
-.player_bk button:not([disabled]).act_on span,
-.player_bk button:not([disabled]).btnSubDisplay_on span{
-	color: #cc181e;
-	text-shadow: 1px 1px 1px #000;
-}
+
+.player_bk button:not([disabled]):hover .icon-play { background-position:0 0; }
+.icon-play { background-position:0 -20px; }
+
+.player_bk button:not([disabled]):hover .icon-pause { background-position:0 -40px; }
+.icon-pause { background-position:0 -60px; }
+
+.player_bk button:not([disabled]):hover .icon-muted{ background-position:0 -80px; }
+.icon-muted { background-position:0 -100px; width:21px; }
+
+.player_bk button:not([disabled]):hover .icon-mute{ background-position:0 -120px; }
+.icon-mute { background-position:0 -140px; width:21px; }
+
+.player_bk button:not([disabled]):hover .icon-fullScreen{ background-position:0 -160px; }
+.icon-fullScreen { background-position:0 -180px; }
+
+.fullscreen_on .player_bk button:not([disabled]):hover .icon-fullScreen{ background-position:0 -200px; }
+.fullscreen_on .icon-fullScreen { background-position:0 -220px; }
+
+.player_bk button:not([disabled]):hover .icon-defaultvideo{ background-position:0 -240px; }
+.icon-defaultvideo { background-position:0 -260px; }
+
+/* .player_bk button:not([disabled]):hover .icon-loader{ background-position:0 -280px; } */
+.icon-loader { background-position:0 -280px; }
+
+.player_bk button:not([disabled]):hover .icon-altvideo{ background-position:0 -320px; }
+.icon-altvideo { background-position:0 -340px; }
+
+.player_bk button:not([disabled]):hover .icon-audiodesc{ background-position:0 -360px; }
+.icon-audiodesc { background-position:0 -380px; width:30px;}
+
+.player_bk button:not([disabled]):hover .icon-subtitles, .player_bk button.btnSubDisplay_on .icon-subtitles{ background-position:0 -400px; }
+.icon-subtitles { background-position:0 -420px; width: 24px; }
+
+.player_bk button:not([disabled]):hover .icon-transcript, .player_bk button.act_on .icon-transcript { background-position:0 -440px; }
+.icon-transcript { background-position:0 -460px; }
+
 .display_off {
 	display: none;
 }
@@ -1791,63 +1784,31 @@ ul.qualityList a.subSelect_on{
 	display:inline-block;
 }
 /*Fullscreen Mode*/
-.fullscreen_on {
-	position: static;
-}
 .fullscreen_on video,
 .fullscreen_on object {
-	max-width: none;
-	z-index: 3;
+	max-width: none !important;
+	z-index: 10000;
 	position: fixed;
-	top: 50%;
-	left: 50%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	box-shadow: none;
 }
 .fullscreen_on .video_bk {
 	position: fixed;
-	left: 50%;
-	z-index: 3;
-	bottom: 20px;
-}
-.fullscreen_on .is_6_toolsBtn {
-	margin-left: -275px;
-}
-.fullscreen_on .is_5_toolsBtn {
-	margin-left: -262.5px;
-}
-.fullscreen_on .fullscreen_on .is_4_toolsBtn {
-	margin-left: -247.5px;
-}
-.fullscreen_on .is_3_toolsBtn {
-	margin-left: -235px;
-}
-.fullscreen_on .is_2_toolsBtn {
-	margin-left: -222.5px;
-}
-.fullscreen_on .is_1_toolsBtn {
-	margin-left: -210px;
-}
-.fullscreen_on .is_0_toolsBtn {
-	margin-left: -197.5px;
-}
-.fullscreen_on .fullScreen_btn {
-	background-position: -1039px 1px;
-}
-.fullscreen_on .fullScreen_btn:hover {
-	background-position: -1079px 1px;
-}
-.fullscreen_on .subBox {
-	z-index: 3;
-	bottom: 55px;
-}
-.fullscreen_bg {
-	background: #000000;
-	position: fixed;
-	z-index: 2;
-	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
+	z-index: 10001;
+}
+.fullscreen_on .seek_progress {
+	flex: 1;
+}
+.fullscreen_on .subBox {
+	z-index: 10001;
+	bottom: 35px;
+	position: fixed;
 }
 .loader_bk span {
 	display: none;
@@ -1856,6 +1817,25 @@ ul.qualityList a.subSelect_on{
   animation: spin 2s infinite linear;
   display: inline-block;
 }
+/* btn play on screen */
+.playOnScreen {
+	background: none;
+    border: none;
+    position: absolute;
+	margin-top: 5px;
+}
+.fullscreen_on .playOnScreen {
+	z-index: 10000;
+    position: fixed;
+    top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0;
+}
+.icon-playOnScreen { background-position:0 -20px; }
+button.playOnScreen:hover .icon-pauseOnScreen { background-position:0 -60px; }
+.icon-pauseOnScreen { background-position:0 1000px; }
 @-moz-keyframes spin {
   0% {
     -moz-transform: rotate(0deg);
@@ -1965,12 +1945,13 @@ button:focus,
 #footer > a {
 	position: absolute;
 	right: 5px;
-	bottom:0;
+	bottom: 2px;
+	line-height: 1px;
 }
 .legalInfo {
 	margin-left: 5px;
 }
-.default #footer{
+.default #footer, .sco #footer{
 	background-color:#f2f2f2;
 }
 /* === STOP - FOOTER ======================================================== */
@@ -2340,7 +2321,7 @@ i.webInstruct p{
 	margin-bottom: 0;
 }
 i.webInstruct{
-	color:676767;
+	color:#676767;
 }
 .txt_auth_tl {
 	font-weight:bold;
@@ -2386,6 +2367,12 @@ a.iBk_closed:hover::before, a.iBk_open::before{
 }
 .quizBody > .question {
 	order:2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right, #434e52 0%, rgba(0, 0, 0, 0) 100%);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 1px;
 }
 .quizBody > .subQuiz{
 	order: 3;
@@ -2444,16 +2431,6 @@ a.iBk_closed:hover::before, a.iBk_open::before{
 .reset:hover span{
 	background-position: right -125px;
 }
-.question >.rBk {
-	margin-top: 20px;
-	background-image: linear-gradient(to right, #434e52 0%, rgba(0, 0, 0, 0) 100%);
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: 100% 1px;
-}
-.coQuiz .question >.rBk{
-	background-image:none;
-}
 .scoreBox {
 	line-height: 40px;
 	font-weight:bold;
@@ -2489,9 +2466,6 @@ a.iBk_closed:hover::before, a.iBk_open::before{
 	margin-left:9px;
 	padding-left:5px;
 }
-.question > .res {
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
 .exoAsw {
 	margin-top: 20px;
 }
@@ -2502,7 +2476,7 @@ a.iBk_closed:hover::before, a.iBk_open::before{
 	display: flex;
 	flex-flow: row;
 	font-style: italic;
-	color:676767;
+	color:#676767;
 	margin:0;
 }
 .response_ti > span:nth-child(-n+2){
@@ -2540,7 +2514,10 @@ li.choiceList_ch{
 	margin-top: 0;
 	margin-left: 0;
 }
-
+/* --- QCU/QCM GRAPHIQUE ------------------------------------------------------- */
+.choiceMap_map{
+	margin: 0 auto;
+}
 /* --- CATEGORISATION/ORDONNANCEMENT ------------------------------------------------------- */
 .mtTable {
 	width:100%;
@@ -3137,12 +3114,6 @@ body.sco{
 	background-position: 0 -128px;
 	opacity:1;
 }
-.sco #document {
-    margin-top: 60px;
-}
-.sco .scroller {
-    padding: 1em;
-}
 .sco .subWindow_win {
     position: fixed !important;
 }
@@ -3170,9 +3141,15 @@ body.sco{
 
 /*phones*/
 @media (max-device-width: 500px) and (orientation: portrait), (max-device-height: 500px) and (orientation: landscape){ 
+	html {
+		font-size:0.8em;
+		height: initial;
+		width: initial;
+		overflow: initial;
+		position: initial;
+	}
 	body{
 		margin:0;
-		font-size:0.8em;
 	}
 	.home #root section.article{
 		margin-left: 5%;
@@ -3195,7 +3172,7 @@ body.sco{
 }
 	.default #header h1{
 		text-align: left;
-		padding: 0.7em 0.5em 0 0.5em;
+		padding: 0.7em 3em 0 0.5em;
 	}
 	.default #main{
 		flex-flow: column;
@@ -3424,3 +3401,702 @@ body.sco{
     margin: 0 0 0 0.5em;
 }
 /* === STOP - EMERAUDE ============================================= */
+
+/* === START - RICHSTREAM ============================================= */
+.teContainer {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.teContainer:not(.teReady) {
+	opacity: 0.5;
+}
+
+.teContainer:not(.teReady) > .hBk_co {
+	opacity: 0;
+}
+
+/* Alternative à l'icône de l'activé en float : absolu et flex avec pseudo after de la même taille que l'icône */
+.module .teContainer > h2.hBk_ti:before {
+	position: absolute;
+	right: 1em;
+}
+
+.teContainer > h2.hBk_ti {
+	display: flex;
+}
+
+.teContainer > .hBk_ti::after {
+	content: '';
+	display: block;
+	margin-right: 10px;
+	width: 120px;
+}
+
+.teContainer > .hBk_co {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	min-height: 0;
+}
+
+.teMainArea {
+	display: flex;
+	flex: 1;
+	min-height: 0;
+	overflow: hidden;
+}
+
+.teSegmentHead_ti {
+	background-image: linear-gradient(to right, #434e52 0%, rgba(0, 0, 0, 0) 100%);
+	background-size: 100% 1px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	padding-bottom: 4px;
+	font-size: 1.3em;
+	margin-top: 0;
+}
+
+/* Media */
+.teMediaArea {
+	min-width: 0;
+	min-height: 0;
+}
+
+.teMediaArea video {
+	background: transparent;
+}
+
+.teContainer.teVideoType .teMediaArea {
+	flex: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+
+/* Force un aspect 16:9 sur les iframes */
+.teMediaArea > mediaelementwrapper {
+	position: relative;
+	overflow: hidden;
+	flex: 0 1 auto;
+	display: block;
+}
+
+.teMediaArea > mediaelementwrapper::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.teMediaArea > mediaelementwrapper > * {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+.teContainer.teVideoType .teMediaArea::after {
+	content: '';
+	display: flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	width: 75px;
+	height: 75px;
+	pointer-events: none;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.teContainer.teVideoType.tePaused:not(.tePlayed) .teMediaArea::after {
+	background: transparent url("../img/richStream/videoPlayPause.svg") no-repeat 0 0;
+}
+
+.teContainer.teVideoType.teVideoPlay .teMediaArea::after {
+	background: transparent url("../img/richStream/videoPlayPause.svg") no-repeat 0 0;
+	animation: bezelFadeout .5s linear 1 normal forwards;
+}
+
+.teContainer.teVideoType.teVideoPause .teMediaArea::after {
+	background: transparent url("../img/richStream/videoPlayPause.svg") no-repeat 0 -75px;
+	animation: bezelFadeout .5s linear 1 normal forwards;
+}
+
+@keyframes bezelFadeout {
+	0% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		transform: scale(2)
+	}
+}
+
+.teMediaArea > .teSubtitles {
+	text-align: center;
+	font-size: 1.2em;
+	padding: 0 1em;
+	box-sizing: border-box;
+	margin-top: -2.2em;
+	z-index: 1;
+}
+
+.teMediaArea > .teSubtitles > div {
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 0.5em;
+	border-radius: 0.5em;
+	color: #fff;
+	text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+	margin: 0 auto;
+	white-space: pre-line;
+}
+
+/* Content */
+.teContentArea {
+	display: flex;
+	flex: 0 0 0px;
+	transition: flex 0.5s;
+	position: relative;
+	min-width: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.teContainer.teActiveAside .teContentArea {
+	flex-basis: 50px;
+}
+
+.teContainer.teActiveSegment .teContentArea,
+.teContainer.teActivePause .teContentArea {
+	flex-basis: 60%;
+}
+
+.teContainer.teActiveSegment.teActiveAside .teContentArea,
+.teContainer.teActivePause.teActiveAside .teContentArea {
+	flex-basis: calc(60% + 50px);
+}
+
+.teContainer.teAudioType .teContentArea {
+	flex-grow: 1;
+}
+
+.teSegment,
+.tePause {
+	flex: 1;
+	margin: 1em;
+	transition: opacity 0.3s ease-in;
+}
+
+.teSegmentAside {
+	transition: opacity 0.3s ease-in;
+}
+
+.tePause {
+	align-self: stretch;
+	overflow: auto;
+}
+
+.teSegment[hidden],
+.tePause[hidden],
+.teSegmentAside[hidden],
+.teContainer.teActivePause .teSegment,
+.teContainer.teActivePause .teSegmentAside {
+	display: block;
+	flex: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	margin: 0;
+	visibility: hidden;
+}
+
+/* Compléments */
+.teSegmentCompls {
+	list-style: none;
+	padding: 1em 0;
+	margin: 0;
+}
+
+.teSegmentCompl {
+	display: block;
+	position: relative;
+	margin: 1em 0;
+	text-align: right;
+	width: 35px;
+	height: 40px;
+	background: url(../img/content/blocks.svg) no-repeat scroll transparent;
+	background-position: 0 -241px;
+}
+
+.teSegmentCompl {
+	color: #434e52;
+}
+
+.teSegmentCompl > span {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 0.5em;
+	transition: opacity 0.4s ease-in;
+	opacity: 0;
+	visibility: hidden;
+	white-space: nowrap;
+	position: absolute;
+	right: -1000px;
+	height: 40px;
+	line-height: 45px;
+	z-index: 2;
+	font-weight: bold;
+	padding: 0 0.5em;
+}
+
+.teSegmentCompl:hover > span,
+.teSegmentCompl:focus > span {
+	opacity: 1;
+	visibility: visible;
+	right: 45px;
+}
+
+/* Controleur */
+.teController {
+	display: flex;
+	flex: 0 0 3em;
+	margin-top: 0.5em;
+	position: relative;
+	justify-content: space-between;
+	justify-content: space-evenly;
+}
+
+.teController > * {
+	margin: 0 0.5em;
+}
+
+.teControllerNavArea {
+	display: flex;
+	flex-direction: column;
+	flex: 3;
+}
+
+.teTimeline {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex: 1;
+	position: relative;
+	border: solid 1px #434e52;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.teTimeline li {
+	position: relative;
+	display: flex;
+}
+
+.teTimeline li > div {
+	display: flex;
+}
+
+.teTimeline a {
+	display: flex;
+	flex: 1 1 100%;
+	border-left: solid 1px #434e52;
+	color: inherit;
+	text-decoration: inherit;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.teTimeline a:hover {
+	cursor: pointer;
+}
+
+.teTimeline a span {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.teTimeline li.teActive > a {
+	background-color: #727d80;
+}
+
+.teTimeline li > a.tlQuizList {
+	display: none;
+	background-color: silver;
+	flex: 1 2 1em;
+	border-left-style: dashed;
+}
+
+.teTimeline li:hover > a.tlQuizList,
+.teTimeline li.teActive > a.tlQuizList {
+	display: block;
+}
+
+.teTimeline a:hover {
+	outline: none;
+	background-color: silver;
+}
+
+.teTimeline a:active {
+	outline: none;
+	background-color: grey;
+}
+
+.teTimeline li:first-child a:first-child {
+	border-left: none;
+}
+
+.teTimeline a > span {
+	display: none;
+}
+
+.teTimeline li > ul a {
+	border-top: none;
+}
+
+.tlQuizList {
+	display: none;
+	background-color: silver;
+	flex: 1 2 1em;
+	border-left-style: dashed;
+}
+
+.teTimeline li:hover > .tlQuizList,
+.teTimeline .teActive > .tlQuizList {
+	display: block;
+}
+
+.teTimes {
+	display: flex;
+	flex-direction: column;
+}
+
+.teTimes > * {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.teQuizListActions {
+	text-align: center;
+}
+
+.teQuizListStart .tePauseNext {
+	background: url(../img/tpl/button-start.svg) no-repeat scroll right center / 40px 40px transparent;
+	color: #434e52;
+	display: inline-block;
+	font-size: 1.2em;
+	height: 40px;
+	padding-right: 50px;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+.tePauseNext, .tePauseResume {
+	background: url(../img/quiz/eval.svg) no-repeat scroll transparent;
+	background-position: right 0;
+	height: 33px;
+	display: inline-block;
+	padding-right: 40px;
+	padding-left: 40px;
+	color: #434e52;
+	font-size: 1.2em;
+	text-decoration: none;
+	line-height: 33px;
+}
+
+/* Panel */
+.teController > .panel {
+	position: absolute;
+	bottom: calc(100% + 10px);
+	z-index: 1;
+	padding: 0.2em 30px 0.2em 1em;
+	background-color: white;
+	border: 2px solid #434e52;
+}
+
+.teController > .panel > .panelLabel {
+	width: 2.4em;
+	background-size: auto 1.6em;
+}
+
+.teController > .panel > .panelLabel[hidden] {
+	display: none !important;
+}
+
+.teController > .panel > .panelLabel:hover {
+	opacity: 0.7;
+}
+
+.teController > .panel > .panelClose {
+	border: none;
+	background: transparent center / contain no-repeat;
+	color: inherit;
+	-webkit-appearance: none;
+	padding: 0;
+	font-size: inherit;
+	margin: 0;
+	cursor: pointer;
+	background: url(../img/content/buttons.svg) no-repeat top;
+	background-size: 100%;
+	background-position: 0 -32px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}
+
+.teController > .panel > .panelClose > span {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.teController > .panelInput {
+	display: none;
+}
+
+.teController > .panelInput:not(:checked) + .panelLabel + .panel {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+}
+
+/* Boutons */
+.teController button,
+.teController > label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #434e52;
+	position: relative;
+	cursor: pointer;
+}
+
+.teController button {
+	background: none;
+	border: none;
+	min-height: 0;
+}
+
+.teController button:disabled {
+	opacity: 0.5;
+}
+
+.teController > input:checked + label::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0.2em;
+	height: 0.2em;
+	background-color: #434e52;
+}
+
+.teController > input[type=checkbox] {
+	display: none;
+}
+
+.teController button > span,
+.teController > label > span {
+	display: none;
+}
+
+.tePlayPause::before,
+.tePreviousTime::before,
+.teNextTime::before,
+.teMute::before,
+.teAudioDesc_label::before,
+.teAltMedia_label::before,
+.teSubtitlesPanel_label::before,
+.teTocPanel_label::before {
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: transparent url("../img/richStream/icons.svg") no-repeat 0 0;
+}
+
+.tePlayPause::before {
+	background-position: 0 0;
+}
+
+.tePlayPause[aria-pressed=true]::before {
+	background-position: 0 -20px;
+}
+
+.teContainer.teSeeking .tePlayPause::before {
+	background-position: 0 -40px;
+	animation: spin 2s linear infinite;
+}
+
+.tePreviousTime::before {
+	background-position: 0 -60px;
+}
+
+.teNextTime::before {
+	background-position: 0 -80px;
+}
+
+.teMute::before {
+	background-position: 0 -100px;
+	width: 21px;
+}
+
+.teMute[aria-pressed=true]::before {
+	background-position: 0 -120px;
+	width: 21px;
+}
+
+.teAudioDesc_label::before {
+	background-position: 0 -160px;
+	width: 30px;
+}
+
+.teAltMedia_label::before {
+	background-position: 0 -200px;
+}
+
+.teSubtitlesPanel_label::before {
+	background-position: 0 -220px;
+	width: 24px;
+}
+
+.teTranscriptLink {
+	display: flex;
+	width: 2em;
+	justify-content: center;
+	align-items: center;
+	color: #434e52;
+}
+
+.teTranscriptLink::before {
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: transparent url("../img/richStream/icons.svg") no-repeat 0 -180px;
+}
+
+.teTranscriptLink > span {
+	display: none;
+}
+
+.teVolumeArea {
+	position: relative;
+	display: flex;
+}
+
+.teController input[type=range] {
+	display: block;
+	border: solid 1px #434e52;
+	color: #e0ecec;
+	padding: 0;
+	margin: 0;
+}
+
+input[type=range].teVolume {
+	height: 0.5em;
+	width: 7em;
+	align-self: center;
+	transform: translateX(7em) rotate(-90deg);
+	transform-origin: left;
+	margin-left: -7em !important;
+	left: 50%;
+	top: 0.1em;
+	visibility: collapse;
+	opacity: 0;
+	transition: visibility 0s 1.5s, opacity 0.5s 1s;
+}
+
+input[type=range].teSeek {
+	margin-bottom: 0.2em;
+	width: auto;
+	flex: 0 0 0.8em;
+	position: static;
+}
+
+.teController input[type=range]:hover,
+.teController input[type=range]:focus,
+.teMute:hover + input[type=range].teVolume,
+.teMute.focus + input[type=range].teVolume {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s 0s, opacity 1s 0s;
+}
+
+.teSubtitlesList {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.teSubtitle_input {
+	display: none;
+}
+
+.teSubtitle_input:checked + label {
+	text-decoration: underline;
+}
+
+.teSubtitlesPanel {
+	right: 0;
+	padding-right: 20px;
+}
+
+/* Toc */
+.teTocPanel {
+	left: 0;
+	right: 0;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.teTocPanel_label::before {
+	background-position: 0 -140px;
+}
+
+.teToc {
+	padding-left: 0;
+	list-style: none;
+}
+
+.teToc li {
+	margin: 0.3em 0;
+}
+
+.teToc a {
+	color: black;
+	text-decoration: none;
+}
+
+.teToc li.teActive > a {
+	text-decoration: underline;
+}
+
+.teToc a:hover {
+	text-decoration: underline;
+}
+
+/* === STOP - RICHSTREAM ============================================= */
